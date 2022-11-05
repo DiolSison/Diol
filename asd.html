@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Babyyyyyyyyy &lt;3</title>
+    <link href="dsa.css"rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="btn button">
+            <div class="bg btn circ"></div>
+            <div class="bg circ" id="bg2"></div>
+            <div class="bg circ" id="bg3"></div>
+            <div class="bg circ" id="bg4"></div>
+            <p class="text">Pindutin moko!!!</p>
+            <p class="text hide">Hi Mahal ko!!!<small>Tap Anywhere</small></p>
+            <p class="text hide">Happy Anniversary!!!<small>Tap Anywhere</small></p>
+            <p class="text hide">Hi mahaaaaal ko HAPPY ANNIVERSARY!! 💕 bilis ng panahon no 3 taon na pala tayo nag gagaguhan HAHAHAHAHAH parang kahapon lang inaway away kita HAHAHAHAH parang nung nakaraan lang masaya pa tayong umiinom ngayon bawal nako HAAHAHAHA hiii mahaaaaaaaaaal sorrryyyy po pala kung wala akong gift sayoooo babawi nalang po ako sayo sa susunod gusto ko po kasi yung ibibigay ko sayo ay galing sa pawis ko sorryyy po talaga ito po muna yung gift ko sayo simple lang po ito pero sana maappreciate mo may times na nag puyat ako para dito pero yung iba kinuha ko yung code sa mga site HAHAHAHAH sorryyy po talagaa babawi ako sayooo promise!!!!! Hiiii Mahaaal ang akin lang bawas bawasan mo yung kakulitan mo pagnakakainom nawawala ako sa bait nauubos pasensya ko kapag sobrang kulit mo HAHAHAHAHAH pero joke lang ayun lwng bawas bawas mo lamg onti lwng naman HAHAHAHA sana sa dadating pa na panahon ay wag kang mag sasawa dahil wala akong naibibigay sayo sorryyy dahil minsan yung ugali ko nakakaasar din sorryyy kung palagi kita inaasar kahit banas kana inaaasar parin kita cute mo kasi maasar eh/ mapikon bleeeeeeeee... Hiiiiii!!!! mag iingat ka palagi ahh sa mga oras na hindi moko kasamaaaaaa sure na ko kay papagod na ikaw na talagaaa MAHAL NA MAHAL KITAAA!!💕 HAPPY ANNIVERSARY MAHAAALL!!! MWUAAA!<small>Tap again to refresh</small></p>
+        </div>
+        <div class="container">
+            <div class="hearty heart x1"></div>
+            <div class="hearty heart x2"></div>
+            <div class="hearty heart x3"></div>
+            <div class="hearty heart x4"></div>
+            <div class="hearty heart x5"></div>
+            <div class="hearty altheart x6"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const circ = document.querySelectorAll('.btn');
+    const txt = document.querySelectorAll('.text');
+    const bg = document.querySelectorAll('.bg');
+    let i = 0;
+    circ[0].addEventListener('click',()=>{
+        circ[1].classList.toggle("inc");
+        circ[0].classList.add("inc");
+        bg[i].classList.add('inc');
+        i++;
+        if(i=>1){
+            txt[i-1].classList.add('hide');
+            txt[i].classList.remove('hide');
+            if(i==3){
+                circ[0].addEventListener('click',()=>{
+                    txt[0].classList.remove('hide');
+                    setTimeout(function(){
+                        window.location.reload();
+                    },1000);
+                })
+            }
+        }
+        else{
+            txt[0].classList.add('hide');
+            txt[i].classList.remove('hide');
+        }
+    })
+</script>
